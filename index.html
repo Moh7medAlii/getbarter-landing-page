@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetBarter - A Smart Barter Platform for Modern Businesses</title>
+    <title>GetBarter - A Secure Barter Platform for Modern Businesses in the MENA Region</title>
+    
     <style>
         /* Global Styles */
         :root {
@@ -56,10 +57,6 @@
             margin-bottom: 15px;
         }
 
-        p {
-            margin-bottom: 1rem;
-        }
-
         /* Buttons/CTAs */
         .cta-button {
             display: inline-block;
@@ -93,7 +90,7 @@
             color: var(--white);
         }
 
-        /* Header/Navigation (Simple for One Page) */
+        /* Header/Navigation */
         header {
             background-color: var(--white);
             padding: 15px 0;
@@ -116,7 +113,7 @@
             text-decoration: none;
         }
 
-        /* 1. Hero Section */
+        /* 1. Hero Section Specifics */
         #hero {
             background-color: var(--light-bg);
             padding: 100px 0;
@@ -124,7 +121,7 @@
         }
 
         #hero h1 {
-            font-size: 3.5rem;
+            font-size: 3.2rem; /* Adjusted for longer title */
             color: var(--dark-text);
             margin-bottom: 20px;
         }
@@ -133,20 +130,31 @@
             font-size: 1.25rem;
             color: var(--secondary-color);
             max-width: 800px;
-            margin: 0 auto 40px;
+            margin: 0 auto 15px; /* Margin reduced to fit feature list */
+        }
+        
+        /* New: Features List Styling */
+        .features-list {
+            list-style: none; /* Remove default bullet points */
+            padding: 0;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            display: flex; /* Arrange list items horizontally */
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        /* Sections Styling */
-        section {
-            scroll-margin-top: 70px; /* Offset for sticky header */
-        }
-
-        #problem, #solution, #target-market, #value-proposition, #business-model, #vision {
-            background-color: var(--white);
-        }
-
-        #how-it-works, #call-to-action {
-            background-color: var(--light-bg);
+        .features-list li {
+            background-color: #e9ecef; /* Light gray background for items */
+            color: var(--dark-text);
+            padding: 8px 15px;
+            margin: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            font-weight: 500;
         }
 
         /* 4. How It Works Section Specifics */
@@ -202,11 +210,6 @@
             padding: 60px 0;
         }
 
-        #call-to-action h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-        }
-
         /* 10. Footer */
         footer {
             background-color: var(--dark-text);
@@ -233,7 +236,6 @@
             color: var(--primary-color);
         }
 
-        /* Social Icons - Simple text links for minimal approach */
         .social-icons a {
             font-size: 1.1rem;
             margin-left: 15px;
@@ -258,34 +260,10 @@
             .section-padding {
                 padding: 60px 0;
             }
-
-            .footer-content {
+            
+            .features-list {
                 flex-direction: column;
-                text-align: center;
-            }
-
-            .footer-links, .social-icons {
-                margin-top: 15px;
-            }
-
-            .footer-links a {
-                margin: 0 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .cta-button {
-                display: block;
-                width: 80%;
-                margin: 10px auto;
-            }
-
-            #hero h1 {
-                font-size: 2rem;
-            }
-
-            .step-card {
-                padding: 20px;
+                align-items: center;
             }
         }
     </style>
@@ -295,13 +273,21 @@
     <header>
         <div class="container">
             <a href="#hero" class="logo">GetBarter</a>
-            </div>
+        </div>
     </header>
 
     <section id="hero" class="section-padding">
         <div class="container">
-            <h1>A Smart Barter Platform for Modern Businesses</h1>
+            <h1>A Secure Barter Platform for Modern Businesses in the MENA Region</h1>
+            
             <p class="subheadline">We help startups and SMEs exchange products and services efficiently, reduce cash dependency, and unlock new growth opportunities through a trusted digital barter ecosystem.</p>
+
+            <ul class="features-list">
+                <li>Digital identity verification</li>
+                <li>Secure smart contracts</li>
+                <li>Escrow transaction model</li>
+                <li>Designed for startup ecosystems</li>
+            </ul>
 
             <a href="mailto:contact@getbarter.world" class="cta-button primary-cta">Get Started</a>
             <a href="#how-it-works" class="cta-button secondary-cta">Learn More</a>
